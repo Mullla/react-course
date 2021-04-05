@@ -1,3 +1,5 @@
+import './App.css';
+
 const Header = () => (
   <header>
 		<div className="wrapper">
@@ -99,14 +101,16 @@ const Footer = () => (
 	</footer>
 );
 
-const RenderJSX  = () => (
-  <div>
-    <Header />
-    <Main />
-    <Features />
-    <Contact />
-    <Footer />
-  </div>
-);
+function App() {
+  return (
+    <>
+      <Header />
+      <Main />
+      <Features />
+      <Contact />
+      <Footer />
+    </>
+  );
+}
 
-ReactDOM.render(<RenderJSX />, document.getElementById('root'));
+export default App;
